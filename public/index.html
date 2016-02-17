@@ -2,17 +2,149 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MP1 Starter</title>
+  <title>Welcome to Chanterelle's Cats</title>
   <link rel="stylesheet" href="css/styles.css">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <div class="test"> My name is Anthony.</div>
-  <div class="cat">
-    <img src="./media/cat.jpg" alt="Cat">
+
+  <header id="header-nav">
+    <div>
+      <h1>Chanterelle's Cats</h1>
+      <nav>
+        <a href="#" class="active" section="intro">Welcome</a>
+        <a href="#" section="about">About Us</a>
+        <a href="#" section="testimonials">Testimonials</a>
+        <a href="#" section="gallery">Gallery</a>
+        <a href="#" section="contact">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="modal-window">
+    <div>
+      <a href="#" id="modal-close">
+        <img src="#" id="modal-image">
+      </a>
+    </div>
   </div>
 
+  <div class="wrapper">
+  <div class="background-img"></div>
+  </div>
+
+  <div class="content">
+    <section id="intro">
+      <div class="video-container">
+        <div class="video-overlay">
+          <div class="video-overlay-title"><h1>Chanterelle's Cats</h1></div>
+          <div class="video-overlay-body"><p>Chanterelle's Cats is home to the most adorable cats and kittens you'll ever meet.</p></div>
+        </div>
+        <video autoplay loop muted id="bgvid">
+          <source src="./media/cats.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+    <section id="about" class="transparent">
+      <div class="wrapper transparent fullscreen">
+        <div class="overlay">
+          <h1>About Us</h1>
+          <p>We are a small time, family-owned pet store located in Urbana, IL. Though we do have all types of pets, we specialize in cats and cat goods.</p>
+          <p>Our address is 201 N. Goodwin Ave. Urbana, IL 61801.</p>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="wrapper multi">
+        <div class="col">
+          <h1>Testimonials</h1>
+        </div>
+      </div>
+      <div class="wrapper multi">
+        <div class="col">
+          <a href="#">
+            <img src="./media/cat1.png" alt="Cat" class="modal">
+          </a>
+          <p>I've had Natalie for the past two years and she's just the cutest thing ever. She's very playful and energetic and I love having her in my house. Never a dull day with this cat! Thanks Chanterelle's Cats!</p>
+        </div>
+        <div class="col">
+          <a href="#">
+            <img src="./media/cat2.png" alt="Cat" class="modal">
+          </a>
+          <p>Rocky is the chillest cat you'll ever meet. He likes to sit at my computer and act like he's a professional e-sports player just like me. What a baller cat. Couldn't have asked for any other.</p>
+        </div>
+        <div class="col">
+          <a href="#">
+            <img src="./media/cat3.png" alt="Cat" class="modal">
+          </a>
+          <p>Kenny does really weird things. He'll scowl at you one moment, then raise his paw and ask for a high five. He almost acts like he never grew past the kitten stage. But even though he might be weird, he's a great cat to have around.</p>
+        </div>
+      </div>
+      <div class="wrapper multi">
+        <div class="col">
+          <a href="#">
+            <img src="./media/cat4.png" alt="Cat" class="modal">
+          </a>
+          <p>Max is a really quiet cat. He sneaks around all the time and hardly makes any noise while doing so. My children take it as a challenge to play hide and seek with him every weekend, and they absolutely adore him. Thanks for entertaining my kids, Chanterelle's Cats!</p>
+        </div>
+        <div class="col">
+          <a href="#">
+            <img src="./media/cat5.png" alt="Cat" class="modal">
+          </a>
+          <p>Myranda likes to watch me go on reddit and view cat pics. She meows every time she sees a new picture. I can almost swear she's laughing at me for wasting my time on the internet.</p>
+        </div>
+        <div class="col">
+          <a href="#">
+            <img src="./media/cat6.png" alt="Cat" class="modal">
+          </a>
+          <p>Katara is a very serious cat. Just look at her stern look! But once she gets to know you, Katara loves to do all sorts of cute cat things like meowing and licking you all over. I absolutely love her!</p> 
+        </div>
+      </div>
+    </section>
+    <section id="gallery">
+      <div class="wrapper multi">
+        <h1>Gallery</h1>
+      </div>
+      <div class="wrapper multi">
+        <div class="carousel">
+          <a href="#" id="carousel-prev" class="carousel-control">
+            <span class="fa fa-arrow-left fa-4x"></span>
+          </a>
+          <img src="./media/cat1.png" alt="Cat" id="carousel-img">
+          <a href="#" id="carousel-next" class="carousel-control">
+            <span class="fa fa-arrow-right fa-4x"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="wrapper multi">
+        <div class="col">
+          <h1>Contact Us</h1>
+        </div>
+      </div>
+      <div class="wrapper multi">
+        <div class="col">
+          <a href="#" class="social">
+            <span class="fa fa-facebook-square fa-5x"></span>
+          </a>
+          <p>Like us on Facebook!</p>
+        </div>
+        <div class="col">
+          <a href="#" class="social">
+            <span class="fa fa-instagram fa-5x"></span>
+          </a>
+          <p>Follow us on Instagram!</p>
+        </div>
+        <div class="col">
+          <a href="#" class="social">
+            <span class="fa fa-envelope fa-5x"></span>
+          </a>
+          <p>Send us an email!</p>
+        </div>
+      </div>
+    </section>
+  </div>
   <script src="lib/jquery-2.1.3.min/index.js"></script>
   <script src="js/script.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
